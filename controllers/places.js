@@ -1,5 +1,6 @@
 const router = require('express').Router()
 
+//Places Index Page
 router.get('/', (req, res) => {
     let places = [{
         name: 'H-Thai-ML',
@@ -18,6 +19,20 @@ router.get('/', (req, res) => {
     res.render('places/index', { places })
 })
 
+//New Place Page
+router.get('/', (req, res) => {
+    res.render('places/newPlace')
+})
+
+//Show Place Page
+router.get('/', (req, res) => {
+    res.render('places/showPlace')
+})
+
+//Edit Place Page
+router.get('/', (req, res) => {
+    res.render('places/editPlace')
+})
 
 
 
