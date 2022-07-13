@@ -20,17 +20,17 @@ router.get('/', (req, res) => {
 })
 
 //New Place Page
-router.get('/', (req, res) => {
+router.get('/newPlace', (req, res) => {
     res.render('places/newPlace')
 })
 
 //Show Place Page
-router.get('/', (req, res) => {
+router.get('/showPlace', (req, res) => {
     res.render('places/showPlace')
 })
 
 //Edit Place Page
-router.get('/', (req, res) => {
+router.get('/editPlace', (req, res) => {
     res.render('places/editPlace')
 })
 
