@@ -16,6 +16,12 @@
 
 **Well now you have a place to make those thoughts public, the REST-rant review app.**  
 
+## Tech
+**CSS Framework:** Bootstrap  
+**Stack:** MongoDB, Express, NodeJS  
+**Server-Side Rendering:** JSX  
+**Node Modules:** method-override, dotenv, express-react-views  
+
 ## Routes  
 | Method  | Path                     | Purpose                                         |
 | ------- | ------------------------ | ----------------------------------------------- |
@@ -30,3 +36,32 @@
 | POST    | /places/:id/rant         | Create a rant (review) about a particular place |
 | DELETE  | /places/:id/rant/:rantId | Delete a rant (review) about a particular place |
 | GET     | *                        | 404 Page (any route not listed here)            |  
+
+
+## Database
+**Places**  
+| Field    | Type      |
+| -------- | --------- |
+| _id      | Object ID |
+| name     | String    |
+| city     | String    |
+| state    | String    |
+| cuisines | String    |
+| pic      | String    |  
+
+**Rants**
+| Field       | Type                   |
+| ----------- | ---------------------- |
+| _id         | Object ID              |
+| place_id    | ref(places) Object_Id  |
+| rant        | Boolean                |
+| rating      | Number                 |
+| comment     | String                 |
+| reviewer    | String                 |
+
+
+## Planning
+**User Stories**  
+
+
+**Wireframes**  
