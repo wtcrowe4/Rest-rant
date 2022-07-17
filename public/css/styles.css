@@ -6,6 +6,7 @@ h1 {
     text-align: center;
     color: rgb(3, 36, 95);
     font-size: 3em;
+    font-weight: bolder;
     text-shadow: white 2px 3px;
 }
 
@@ -19,10 +20,10 @@ img {
 
 button {
     margin: 5px;
-    ;
+    
 }
 
-#navBar {
+#navBar, .submitBtn {
     display: flex;
     justify-content: center;
 }
@@ -37,9 +38,25 @@ button {
     font-size: .6em;
 }
 
-#homePlaceBtn {
+/* #homePlaceBtn, #newPlaceBtn, #submitBtn  */
+.btn-primary {
     height: 5vh;
     width: 15vh;
     background-color:rgb(3, 36, 95);
     border-color: white;
+    margin: 5px;
+}
+
+form {
+    margin: 10px;
+}
+
+label {
+    color: rgb(3, 36, 95);
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+input {
+    border:rgb(3, 36, 95) 2px 2px;
 }

@@ -11,6 +11,9 @@ const home = () => {
                         <a href="/places">
                             <button id="homePlaceBtn" className="btn-primary">Places Page</button>
                         </a>
+                        <a href="/places/newPlace">
+                            <button id="newPlaceBtn" className="btn-primary">New Place Page</button>
+                        </a>
                     </div>
                     <div id="homeImageContainer" className="container">
                         <div className="row-1">
