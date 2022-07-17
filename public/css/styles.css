@@ -1,5 +1,45 @@
+* {
+    background-color: lightblue;
+}
+
 h1 {
     text-align: center;
-    color: cornflowerblue;
+    color: rgb(3, 36, 95);
     font-size: 3em;
+    text-shadow: white 2px 3px;
+}
+
+h2, p {
+    color:rgb(29, 62, 119);
+}
+
+img {
+    height: 50vh;
+}
+
+button {
+    margin: 5px;
+    ;
+}
+
+#navBar {
+    display: flex;
+    justify-content: center;
+}
+
+.homeImage {
+    /* height: 35vh;
+    width: 45vw; */
+    margin: 5px;
+}
+
+.homeLink{
+    font-size: .6em;
+}
+
+#homePlaceBtn {
+    height: 5vh;
+    width: 15vh;
+    background-color:rgb(3, 36, 95);
+    border-color: white;
 }

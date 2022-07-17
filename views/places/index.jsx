@@ -17,7 +17,8 @@ const index = (data) => {
             )
     })
     return(
-        <Def>
+        <Def title="Places">
+            <title>Places</title>
             <main>
                 <h1>Places to Rant or Rave About</h1>
                 <div className="row">
