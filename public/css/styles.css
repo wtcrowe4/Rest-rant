@@ -34,6 +34,10 @@ button {
     margin: 5px;
 }
 
+.placePic {
+    margin: 10px;
+}
+
 .homeLink{
     font-size: .6em;
 }
