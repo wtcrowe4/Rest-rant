@@ -31,14 +31,23 @@ router.get('/newPlace', (req, res) => {
 
 
 //Show Place Page
-router.get('/showPlace', (req, res) => {
-    res.render('places/showPlace')
+router.get('/:id', (req, res) => {
+    let id = Number(req.params.id)
+    if (isNaN(id)) {
+        res.render('error404')
+    } else if (!places[id]) {
+        res.render('error404')
+    } else {
+        res.render('places/showPlace', { place: places[id] })
+    }
 })
 
 //Edit Place Page
-router.get('/editPlace', (req, res) => {
-    res.render('places/editPlace')
-})
+// router.get('/:id', (req, res) => {
+//     res.render('places/editPlace')
+// 
+// Remember { place: places[id] })
+//})
 
 
 
