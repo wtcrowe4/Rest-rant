@@ -2,6 +2,10 @@
     background-color: lightblue;
 }
 
+.content {
+    padding-bottom: 50px;
+}
+
 h1 {
     text-align: center;
     color: rgb(3, 36, 95);
@@ -23,6 +27,13 @@ button {
     
 }
 
+footer {
+    background-color: rgb(3, 36, 95);
+    color: white;
+    height:50px;
+    margin-top: -50px;
+}
+
 #navBar, .submitBtn {
     display: flex;
     justify-content: center;
@@ -42,6 +53,7 @@ button {
     font-size: .6em;
 }
 
+/*Changed to overwrite bootstrap instead of using my ID's*/
 /* #homePlaceBtn, #newPlaceBtn, #submitBtn  */
 .btn-primary {
     height: 5vh;
@@ -64,3 +76,4 @@ label {
 input {
     border:rgb(3, 36, 95) 2px 2px;
 }
+

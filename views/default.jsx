@@ -12,7 +12,12 @@ const Def = (html) => {
                 <link rel="stylesheet" href="/css/styles.css"></link>
             </head>
             <body>
-                {html.children}
+                <div className="content">
+                    {html.children}
+                </div>
+                <footer className="footer-footer">
+                    My Links go here.
+                </footer>
             </body>
         </html>
     )
