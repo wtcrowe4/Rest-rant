@@ -12,6 +12,26 @@ const Def = (html) => {
                 <link rel="stylesheet" href="/css/styles.css"></link>
             </head>
             <body>
+                <div id="navBar">
+                    <ul>
+                        <li>
+                            <a href="/">
+                            <button type="button" id="homeBtn" className="btn-primary">Home Page</button>
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="/places">
+                            <button type="button" id="homePlaceBtn" className="btn-primary">Places Page</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/places/newPlace">
+                            <button type="button" id="newPlaceBtn" className="btn-primary">New Place Page</button>
+                            </a>
+                        </li>
+                      
+                    </ul>
+                </div>
                 <div className="content">
                     {html.children}
                 </div>

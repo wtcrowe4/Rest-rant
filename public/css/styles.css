@@ -43,6 +43,17 @@ footer {
 #navBar, .submitBtn {
     display: flex;
     justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: inherit;
+}
+
+nav li {
+    display: inline;
 }
 
 .homeImage {

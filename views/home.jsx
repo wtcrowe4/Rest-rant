@@ -7,14 +7,14 @@ const home = () => {
             <title>REST-Rant Home</title>
             <main>
                 <h1>REST-Rant Home Page</h1>
-                    <div id="navBar">
+                    {/* <div id="navBar">
                         <a href="/places">
                             <button id="homePlaceBtn" className="btn-primary">Places Page</button>
                         </a>
                         <a href="/places/newPlace">
                             <button id="newPlaceBtn" className="btn-primary">New Place Page</button>
                         </a>
-                    </div>
+                    </div> */}
                     <div id="homeImageContainer" className="container">
                         <div className="row-1">
                             <div className="col-1">
