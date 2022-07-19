@@ -38,16 +38,15 @@ router.get('/:id', (req, res) => {
     } else if (!places[id]) {
         res.render('error404')
     } else {
-        res.render('places/showPlace', { place: places[id] })
+        res.render('places/showPlace', { place: places[id], id })
     }
 })
 
 //Edit Place Page
-// router.get('/:id', (req, res) => {
-//     res.render('places/editPlace')
-// 
-// Remember { place: places[id] })
-//})
+router.get('/:id/edit', (req, res) => {
+    let id = Number(req.params.id)
+    res.render('places/editPlace', { place: places[id] })
+})
 
 
 

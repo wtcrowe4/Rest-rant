@@ -31,13 +31,7 @@ const index = (data) => {
             </main>
         </Def>
         )
-    
 }
 
 module.exports = index
 
-// Warning: Each child in a list should have a unique "key" prop.
-
-// Check the top-level render call using <main>. See https://reactjs.org/link/warning-keys for more information.
-//     at div
-//     in index
