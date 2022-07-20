@@ -8,6 +8,7 @@ const Def = (html) => {
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
                 <title>Rest-rant Review App</title>*/}
+                <link rel="icon" type="image/png" href="/images/cutlery.png"></link>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous"></link>
                 <link rel="stylesheet" href="/css/styles.css"></link>
             </head>
@@ -29,10 +30,12 @@ const Def = (html) => {
                             <button type="button" id="newPlaceBtn" className="btn-primary">New Place Page</button>
                             </a>
                         </li>
-                      
                     </ul>
+                    
                 </div>
+                
                 <div className="content">
+                    <a id="favLink" href="https://www.flaticon.com/free-icons/restaurant" title="restaurant icons">Restaurant icons created by Freepik - Flaticon</a>
                     {html.children}
                 </div>
                 <footer className="footer-footer">
