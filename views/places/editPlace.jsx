@@ -106,6 +106,15 @@ const editPlace = (data) => {
                             defaultValue={data.place.cuisines}
                             required />
                     </div>
+                    <div className="form-group">
+                        <label htmlFor="founded">Year Founded</label>
+                        <input 
+                            className="form-control" 
+                            type="number"
+                            id="founded" 
+                            name="founded" 
+                            defaultValue={data.place.founded} />
+                    </div>
                     <div className="submitBtn">
                         <input id="submitBtn" className="btn btn-primary" type="submit" value="Edit Place" />
                     </div>
