@@ -69,6 +69,7 @@ router.get('/:id/edit', (req, res) => {
 //Show Place Page
 router.get('/:id', (req, res) => {
     db.Place.findById(req.params.id)
+        .populate('comments')
         .then(place => res.render('places/showPlace', {place}))
         .catch(err => res.render('error404'))
     

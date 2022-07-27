@@ -11,7 +11,8 @@ const placeSchema = new mongoose.Schema(
       type: Number, 
       min: [1673, 'Invalid Date: This is before the oldest resturant in the US.'],
       max: [new Date().getFullYear(), 'Invalid Date: This date is in the future.']
-    }
+    },
+    comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment'}]
   }
 )
 
