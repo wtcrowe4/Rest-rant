@@ -13,7 +13,7 @@ const Def = (html) => {
                 <link rel="stylesheet" href="/css/styles.css"></link>
             </head>
             <body>
-                <div id="navBar">
+                <div id="navBar" className="fixed-top">
                     <ul>
                         <li>
                             <a href="/">
@@ -38,7 +38,7 @@ const Def = (html) => {
                     <a id="favLink" href="https://www.flaticon.com/free-icons/restaurant" title="restaurant icons">Restaurant icons created by Freepik - Flaticon</a>
                     {html.children}
                 </div>
-                <footer className="footer-footer">
+                <footer className="footer-footer fixed-bottom">
                     My Links go here.
                 </footer>
             </body>

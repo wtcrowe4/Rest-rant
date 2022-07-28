@@ -7,7 +7,17 @@ const showPlace = (data) => {
             <p>No comments yet.</p>
         </h3>
     )
+    let rating = (
+        <h3 className="inactive">
+            <p>Not yet rated.</p>
+        </h3>
+    )
     if (data.place.comments.length) {
+        let sumRatings = data.place.comments.reduce((tot, c) => tot + c.stars, 0)
+        let averageRating = sumRatings / data.place.comments.length
+        rating = (
+            <h3>{Math.round(averageRating)} Stars</h3>
+        )
         comments = data.place.comments.map(c => {
             return (
                 <div key={c.id} className="border col-sm-3">
@@ -24,6 +34,7 @@ const showPlace = (data) => {
             <title>{data.place.name}</title>
             <main>
                 <h1>{data.place.name}</h1>
+                <br />
                 <div className="row">
                     <div className="col-sm-6" id="placeImage">
                         <img className="placePic" src={data.place.pic} alt={data.place.name}></img> 
@@ -31,7 +42,8 @@ const showPlace = (data) => {
                     </div>
                     <div className="col-sm-6" id="placeInfo">
                         <h2>Rating</h2>
-                        <p>Currently unrated.</p>
+                        {rating}
+                        <br />
                         <h2>Description</h2>
                         <h4>{data.place.name} is a {data.place.cuisines} style restaurant.</h4>
                         <h4>{data.place.showEstablished()}</h4>
