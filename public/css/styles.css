@@ -36,7 +36,7 @@ h3, h4, p {
 }
 
 img {
-    height: 50vh;
+    height: 40vh;
 }
 
 button {
@@ -114,6 +114,16 @@ form {
     margin: 10px;
 }
 
+.edit {
+    margin: auto;
+    padding: 7px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.delete {
+    margin-right: 70px;
+}
+
 label {
     color: rgb(3, 36, 95);
     font-size: 1.5em;
@@ -124,3 +134,7 @@ input {
     border:rgb(3, 36, 95) 2px 2px;
 }
 
+.small {
+    margin-left: 30px;
+    padding: 0;
+}

@@ -14,9 +14,13 @@ const showPlace = (data) => {
     )
     if (data.place.comments.length) {
         let sumRatings = data.place.comments.reduce((tot, c) => tot + c.stars, 0)
-        let averageRating = sumRatings / data.place.comments.length
+        let averageRating = Math.round(sumRatings / data.place.comments.length)
+        let stars = ''
+        for (let i = 0; i < averageRating; i++) {
+            stars += '⭐'
+        }
         rating = (
-            <h3>{Math.round(averageRating)} Stars</h3>
+            <h3>{stars} Stars</h3>
         )
         comments = data.place.comments.map(c => {
             return (
@@ -25,6 +29,9 @@ const showPlace = (data) => {
                     <h4>{c.content}</h4>
                     <h3><strong>- {c.author}</strong></h3>
                     <h4>Rating: {c.stars}</h4>
+                    <form method="POST" action={`/places/${data.place.id}/comment/${c.id}?_method=DELETE`}>
+                        <input type="submit" className="btn btn-danger small" value="Delete Comment" />    
+                    </form>    
                 </div>
             )
         })
@@ -48,11 +55,11 @@ const showPlace = (data) => {
                         <h4>{data.place.name} is a {data.place.cuisines} style restaurant.</h4>
                         <h4>{data.place.showEstablished()}</h4>
                         <div className="showbtns">
-                            <a href={`/places/${data.place.id}/edit`} className="btn btn-warning">
+                            <a href={`/places/${data.place.id}/edit`} className="btn btn-warning edit">
                                 Edit
                             </a>
                             <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
-                                <button type="submit" className="btn btn-danger">
+                                <button type="submit" className="btn btn-danger delete">
                                     Delete
                                 </button>
                             </form>
@@ -66,8 +73,8 @@ const showPlace = (data) => {
                     </div>   
                 </div>
                 <div className="row border">
-                    <h2>Wanna Rant or Rave?</h2>
-                    <form method="POST" action={`/places/${data.place.id}/rant`}>
+                    <h2>Want to Rant/Rave?</h2>
+                    <form method="POST" action={`/places/${data.place.id}/comment`}>
                         <div className="row">
                             <div className="col-sm-10">
                                 <label htmlFor="content">Comments</label>

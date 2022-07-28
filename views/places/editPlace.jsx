@@ -117,7 +117,7 @@ const editPlace = (data) => {
                             defaultValue={data.place.founded} />
                     </div>
                     <div className="submitBtn">
-                        <input id="submitBtn" className="btn btn-primary" type="submit" value="Edit Place" />
+                        <input id="submitBtn" className="btn btn-primary" type="submit" value="Update Place" />
                     </div>
                 </form>
             </main>
