@@ -15,19 +15,19 @@ const Def = (html) => {
             </head>
             <body>
                 <div id="navBar" className="fixed-top">
-                    <ul>
-                        <li>
-                            <a href="/">
+                    <ul className="navBarList">
+                        <li className="navBarList">
+                            <a className="navBarList" href="/">
                             <button type="button" id="homeBtn" className="btn-primary">Home Page</button>
                             </a>
                         </li> 
-                        <li>
-                            <a href="/places">
+                        <li className="navBarList">
+                            <a className="navBarList" href="/places">
                             <button type="button" id="homePlaceBtn" className="btn-primary">Places Page</button>
                             </a>
                         </li>
-                        <li>
-                            <a href="/places/newPlace">
+                        <li className="navBarList">
+                            <a className="navBarList" href="/places/newPlace">
                             <button type="button" id="newPlaceBtn" className="btn-primary">New Place Page</button>
                             </a>
                         </li>

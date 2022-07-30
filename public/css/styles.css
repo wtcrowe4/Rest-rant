@@ -73,6 +73,10 @@ footer {
     background: transparent;
 }
 
+.navBarList {
+    background: none;
+}
+
 .submitBtn {
     display: flex;
     justify-content: center;
