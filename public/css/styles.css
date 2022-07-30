@@ -51,6 +51,15 @@ footer {
     margin-top: -50px;
 }
 
+.social {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 #favLink{
    text-decoration: none;
    color:rgb(3, 36, 95);
