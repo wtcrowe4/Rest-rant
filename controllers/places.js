@@ -20,6 +20,7 @@ router.post('/', (req, res) => {
                     message += `${field[0].toUpperCase()}${field.slice(1)} was ${err.errors[field].value}.  `
                     message += `${err.errors[field].message}`
                 }
+                //console.log(req.body)
                 res.render('places/newPlace', {message}) //Pass in {req.body} to keep valid fields
             } else{
             res.render('error404')}
@@ -53,16 +54,15 @@ router.put('/:id', (req, res) => {
         .catch(err => res.render('error404'))
 }) 
 
-
-//Delete Place
+//DELETE Place
+//Getting cannot set headers after they are sent to the client error when using catch
 router.delete('/:id', (req, res) => {
     db.Place.findByIdAndDelete(req.params.id)
         .then(res.redirect('/places'))
-        .catch(res.render('error404'))
+        //.catch(res.render('error404'))
 })
 
-
-//Rant Post
+//Rant POST
 router.post('/:id/comment', (req, res) => {
     req.body.rant = req.body.rant ? true : false
     db.Place.findById(req.params.id)

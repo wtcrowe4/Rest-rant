@@ -87,18 +87,18 @@ const showPlace = (data) => {
                                 <input className="form-control" type="text" id="author" name="author" />
                             </div>
                             <div className="col-sm-5">
-                                <label htmlFor="stars">Star Rating Left=0 Right=5</label>
-                                <input className="form-control" id="stars" name="stars" type="range" min="0" max="5" step="0.5" list="starslist" />
+                                <label htmlFor="stars">Star Rating</label>
+                                <input className="form-control slider" id="stars" name="stars" type="range" min="0" max="5" step="0.5" list="starslist" />
                                     <datalist id="starslist">
                                         <option value="0"></option>
                                         <option value=".5"></option>
-                                        <option value="1" label="1"></option>
+                                        <option value="1" label="1">1</option>
                                         <option value="1.5"></option>
-                                        <option value="2" label="2"></option>
+                                        <option value="2" label="2">2</option>
                                         <option value="2.5"></option>
-                                        <option value="3" label="3"></option>
+                                        <option value="3" label="3">3</option>
                                         <option value="3.5"></option>
-                                        <option value="4" label="4"></option>
+                                        <option value="4" label="4">4</option>
                                         <option value="4.5"></option>
                                         <option value="5" label="5">⭐</option>
                                     </datalist>
