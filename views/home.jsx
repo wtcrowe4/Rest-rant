@@ -8,12 +8,12 @@ const home = () => {
             <main>
                 <h1>REST-Rant Home Page</h1>
                     <div id="homeContainer" className="container">
-                        <div className="row-1">
-                            <div className="col-1">
+                        <div className="container">
+                            <div className="imageContainer">
                                 <img className="homeImage" src="/images/steak.jpg" alt="Steak Picture"></img>
                                 <a className="homeLink" href="https://pixabay.com/photos/steak-sirloin-meat-beef-food-1083567/">Image by dbreen on Pixaby</a>
                             </div>
-                            <div className="col-2">
+                            <div className="imageContainer">
                                 <img className="homeImage" src="/images/chicken-wings.jpg" alt="Wings Picture"></img>
                                 <a className="homeLink" href='https://www.freepik.com/photos/buffalo-wings'>Buffalo wings photo created by timolina - www.freepik.com</a>
                             </div>
